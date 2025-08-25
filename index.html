@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Trie Web App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Trie Example Application</h1>
+
+        <div class="flex-container">
+            <div>
+                <h2>Add Words from File</h2>
+                <input type="file" id="fileInput" accept=".txt">
+                <button id="uploadBtn">Upload File</button>
+                <div id="fileAddResult" class="result"></div>
+            </div>
+
+            <div>
+                <h2>Add Word</h2>
+                <input type="text" id="wordInput" placeholder="Enter a word">
+                <button id="addWordBtn">Add Word</button>
+                <div id="addResult" class="result"></div>
+            </div>
+
+            <div>
+                <h2>Search Word</h2>
+                <input type="text" id="searchInput" placeholder="Search for a word">
+                <button id="searchBtn">Search</button>
+                <button id="deleteWordBtn">Delete Word</button>
+                <div id="searchResult" class="result"></div>
+            </div>
+
+            <div>
+                <h2>Autocomplete</h2>
+                <input type="text" id="autocompleteInput" placeholder="Type to get suggestions">
+                <ul id="suggestionsList"></ul>
+            </div>
+
+            <div>
+                <button id="resetBtn">Reset Trie</button>
+                <div id="resetResult" class="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
